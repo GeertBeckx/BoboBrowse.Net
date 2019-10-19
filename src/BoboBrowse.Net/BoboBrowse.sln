@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoboBrowse.Net", "BoboBrowse.Net\BoboBrowse.Net.csproj", "{8EEFF620-0996-4B6A-B23C-7D73BECCF73C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuceneExt.Net", "LuceneExt.Net\LuceneExt.Net.csproj", "{58BD9712-0338-4DD7-9F03-1808A9287421}"
@@ -65,5 +67,8 @@ Global
 		{DE47437D-6FE7-49BC-94F2-FA5E6B431711} = {74606D3E-1C8F-401F-95E1-F4F78C5CBD18}
 		{12CE3745-8162-4885-B294-F9810B213C23} = {DE47437D-6FE7-49BC-94F2-FA5E6B431711}
 		{40240A3C-18F1-4BD0-85EC-CDD00081155D} = {DE47437D-6FE7-49BC-94F2-FA5E6B431711}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B1FAEAA-36F5-4986-AEA8-C11EFE55D387}
 	EndGlobalSection
 EndGlobal

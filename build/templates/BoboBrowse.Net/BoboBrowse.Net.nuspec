@@ -2,10 +2,10 @@
 <!-- BoboBrowse.NET shared Nuget specification file; all packages share this -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>BoboBrowse.Net</id>
-		<title>BoboBrowse.Net</title>
+		<id>Tobania.BoboBrowse.Net</id>
+		<title>Tobania.BoboBrowse.Net</title>
 		<version>$version$</version>
-		<authors>NightOwl888</authors>
+		<authors>tobania</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<summary>BoboBrowse.Net is a faceted browse engine implemented on a top of Lucene.Net.</summary>
 		<description>BoboBrowse.Net is a faceted browse engine implemented on a top of Lucene.Net. Originally ported from wonderful Java library developed by John Wang (http://javasoze.github.com/bobo/). While Lucene.Net is good with unstructured data, BoboBrowse.Net fills in the missing piece to handle semi-structured and structured data.</description>
@@ -15,18 +15,7 @@
     <licenseUrl>https://github.com/NightOwl888/BoboBrowse.Net/blob/master/LICENSE.md</licenseUrl>
 		<iconUrl>https://raw.githubusercontent.com/NightOwl888/BoboBrowse.Net/master/BoboBrowse.Net.png</iconUrl>
 		<dependencies>
-			<group targetFramework="net35">
-				<dependency id="Lucene.Net" version="[3.0,4.0)" />
-				<dependency id="C5" version="[1.0.2.0]" />
-				<dependency id="Common.Logging" version="3.0" />
-			</group>
-			<group targetFramework="net40">
-				<dependency id="Lucene.Net" version="[3.0,4.0)" />
-        <!-- 2.2 is the minimum strong-named 2.x version -->
-				<dependency id="C5" version="2.2" /> 
-				<dependency id="Common.Logging" version="3.0" />
-			</group>
-			<group targetFramework="net45">
+			<group targetFramework="net47">
 				<dependency id="Lucene.Net" version="[3.0,4.0)" />
         <!-- 2.2 is the minimum strong-named 2.x version -->
 				<dependency id="C5" version="2.2" />

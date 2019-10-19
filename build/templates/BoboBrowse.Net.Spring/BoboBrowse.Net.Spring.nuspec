@@ -2,8 +2,8 @@
 <!-- BoboBrowse.NET shared Nuget specification file; all packages share this -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>BoboBrowse.Net.Spring</id>
-		<title>BoboBrowse.Net.Spring</title>
+		<id>Tobania.BoboBrowse.Net.Spring</id>
+		<title>Tobania.BoboBrowse.Net.Spring</title>
 		<version>$version$</version>
 		<authors>NightOwl888</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,16 +15,8 @@
     <licenseUrl>https://github.com/NightOwl888/BoboBrowse.Net/blob/master/LICENSE.md</licenseUrl>
 		<iconUrl>https://raw.githubusercontent.com/NightOwl888/BoboBrowse.Net/master/BoboBrowse.Net.png</iconUrl>
 		<dependencies>
-			<group targetFramework="net35">
-				<dependency id="BoboBrowse.Net" version="$version$" />
-				<dependency id="Spring.Core" version="2.0" />
-			</group>
-			<group targetFramework="net40">
-				<dependency id="BoboBrowse.Net" version="$version$" />
-				<dependency id="Spring.Core" version="2.0" />
-			</group>
-			<group targetFramework="net45">
-				<dependency id="BoboBrowse.Net" version="$version$" />
+			<group targetFramework="net47">
+				<dependency id="Tobania.BoboBrowse.Net" version="$version$" />
 				<dependency id="Spring.Core" version="2.0" />
 			</group>
 		</dependencies>
