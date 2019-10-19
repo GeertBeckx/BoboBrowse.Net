@@ -32,6 +32,8 @@ namespace BoboBrowse.Net.Support
         [Test]
         public void TestCurrencyRangeFormat()
         {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
             var facets = new List<BrowseFacet>()
             {
                 new BrowseFacet("[* TO 00015.99]", 23),
