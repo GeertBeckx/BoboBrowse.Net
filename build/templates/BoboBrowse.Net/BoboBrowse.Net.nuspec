@@ -22,5 +22,11 @@
 				<dependency id="Common.Logging" version="3.0" />
 			</group>
 		</dependencies>
+    <references>
+      <reference file="Lucene.Net.v3.dll" />
+    </references>
 	</metadata>
+  <files>
+    <file src="..\..\libs\Lucene.Net.v3.dll" target="lib\net47"/>
+  </files>
 </package>
