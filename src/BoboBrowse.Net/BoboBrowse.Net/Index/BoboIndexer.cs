@@ -49,7 +49,7 @@ namespace BoboBrowse.Net.Index
 
         public virtual Analyzer Analyzer
         {
-            get { return _analyzer == null ? new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT) : _analyzer; }
+            get { return _analyzer == null ? new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30) : _analyzer; }
             set { _analyzer = value; }
         }
 	

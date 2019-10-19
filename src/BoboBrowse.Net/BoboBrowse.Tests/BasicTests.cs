@@ -87,7 +87,7 @@ namespace BoboBrowse.Net
                 new {Name="JavaScript and HTML5 Now",Year=2013,Category=6,Price=12.1,Author=" Kyle Simpson",Path="Book/Programming/Web"},
                 new {Name="Head First JavaScript Programming",Year=2012,Category=6,Price=31.92,Author=" Eric T. Freeman , Elisabeth Robson",Path="Book/Programming/Web"},
             };
-            using (var indexWriter = new IndexWriter(_indexDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT), IndexWriter.MaxFieldLength.UNLIMITED))
+            using (var indexWriter = new IndexWriter(_indexDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30), IndexWriter.MaxFieldLength.UNLIMITED))
             {
                 foreach (var book in dataSet)
                 {

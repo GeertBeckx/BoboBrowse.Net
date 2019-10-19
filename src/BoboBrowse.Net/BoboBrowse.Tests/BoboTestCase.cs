@@ -1783,7 +1783,7 @@ namespace BoboBrowse.Net
         {
             BrowseRequest br = new BrowseRequest();
             br.ShowExplanation = (false);	// default
-            QueryParser parser = new QueryParser(Lucene.Net.Util.Version.LUCENE_CURRENT, "color", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT));
+            QueryParser parser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "color", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30));
             br.Query = parser.Parse("color:red OR shape:square");
             br.Count = (10);
             br.Offset = (0);
@@ -1829,7 +1829,7 @@ namespace BoboBrowse.Net
             try
             {
                 BrowseRequest br = new BrowseRequest();
-                QueryParser parser = new QueryParser(Lucene.Net.Util.Version.LUCENE_CURRENT, "shape", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT));
+                QueryParser parser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "shape", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30));
                 br.Query = parser.Parse("square OR circle");
                 br.Count = 10;
                 br.Offset = 0;
@@ -2670,7 +2670,7 @@ namespace BoboBrowse.Net
             Lucene.Net.Store.Directory idxDir = new RAMDirectory();
             Document[] docs = BuildData();
 
-            IndexWriter writer = new IndexWriter(idxDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT), IndexWriter.MaxFieldLength.UNLIMITED);
+            IndexWriter writer = new IndexWriter(idxDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30), IndexWriter.MaxFieldLength.UNLIMITED);
             writer.AddDocument(docs[0]);
             writer.Optimize();
             writer.Commit();
@@ -2687,7 +2687,7 @@ namespace BoboBrowse.Net
                 Assert.AreSame(boboReader, reader);
 
                 Lucene.Net.Store.Directory tmpDir = new RAMDirectory();
-                IndexWriter subWriter = new IndexWriter(tmpDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT), IndexWriter.MaxFieldLength.UNLIMITED);
+                IndexWriter subWriter = new IndexWriter(tmpDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30), IndexWriter.MaxFieldLength.UNLIMITED);
                 subWriter.AddDocument(doc);
                 subWriter.Optimize();
                 subWriter.Dispose();
@@ -2720,7 +2720,7 @@ namespace BoboBrowse.Net
             /* Underlying time facet for DynamicTimeRangeFacetHandler */
             facetHandlers.Add(new RangeFacetHandler("timeinmillis", new PredefinedTermListFactory<long>(DynamicTimeRangeFacetHandler.NUMBER_FORMAT), null));
             Lucene.Net.Store.Directory idxDir = new RAMDirectory();
-            IndexWriter writer = new IndexWriter(idxDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT), IndexWriter.MaxFieldLength.UNLIMITED);
+            IndexWriter writer = new IndexWriter(idxDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30), IndexWriter.MaxFieldLength.UNLIMITED);
 
             // This method returns the difference, measured in milliseconds, between the current 
             // time and midnight, January 1, 1970 UTC(coordinated universal time).

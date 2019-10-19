@@ -49,6 +49,12 @@ namespace BoboBrowse.Net.Client
 
         public void Dispose()
         {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
             if (_svc != null)
             {
                 _svc.Dispose();
@@ -159,7 +165,7 @@ namespace BoboBrowse.Net.Client
                     string queryString = parsed[1];
                     if (!string.IsNullOrEmpty(queryString))
                     {
-                        var qparser = new QueryParser(Lucene.Net.Util.Version.LUCENE_CURRENT, "contents", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT));
+                        var qparser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "contents", new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30));
                         Query q;
                         try
                         {

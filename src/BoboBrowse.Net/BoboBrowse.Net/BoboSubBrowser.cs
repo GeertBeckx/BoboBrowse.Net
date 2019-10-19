@@ -33,7 +33,7 @@ namespace BoboBrowse.Net
     using System.Diagnostics;
     using System.Linq;
 
-    public class BoboSubBrowser : BoboSearcher2, IBrowsable, IDisposable
+    public class BoboSubBrowser : BoboSearcher2, IBrowsable
     {
         private static ILog logger = LogManager.GetLogger(typeof(BoboSubBrowser));
         private readonly BoboIndexReader _reader;
@@ -427,8 +427,10 @@ namespace BoboBrowse.Net
 
             long start = System.Environment.TickCount;
 
+#pragma warning disable CS0618 // Type or member is obsolete
             SortCollector collector = GetSortCollector(req.Sort, req.Query, req.Offset, req.Count, req.FetchStoredFields, req.TermVectorsToFetch, false, req.GroupBy, req.MaxPerGroup, req.CollectDocIdCache);
-    
+#pragma warning restore CS0618 // Type or member is obsolete
+
             IDictionary<string, IFacetAccessible> facetCollectors = new Dictionary<string, IFacetAccessible>();
             Browse(req, collector, facetCollectors);
             BrowseHit[] hits = null;

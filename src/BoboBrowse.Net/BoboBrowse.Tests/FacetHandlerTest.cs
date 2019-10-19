@@ -84,7 +84,7 @@ namespace BoboBrowse.Tests
             _ramDir = new RAMDirectory();
             try
             {
-                using (var writer = new IndexWriter(_ramDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT), IndexWriter.MaxFieldLength.UNLIMITED))
+                using (var writer = new IndexWriter(_ramDir, new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30), IndexWriter.MaxFieldLength.UNLIMITED))
                 {
                 }
             }

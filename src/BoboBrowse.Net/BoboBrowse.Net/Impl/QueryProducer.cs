@@ -39,9 +39,9 @@ namespace BoboBrowse.Net.Impl
             }
             else
             {
-                var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_CURRENT);
+                var analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30);
                 if (string.IsNullOrEmpty(defaultField)) defaultField = "contents";
-                return new QueryParser(Lucene.Net.Util.Version.LUCENE_CURRENT, defaultField, analyzer).Parse(queryString);
+                return new QueryParser(Lucene.Net.Util.Version.LUCENE_30, defaultField, analyzer).Parse(queryString);
             }
         }
 

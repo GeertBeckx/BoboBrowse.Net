@@ -200,7 +200,9 @@ namespace BoboBrowse.Net
             {
                 throw new ArgumentOutOfRangeException("both offset and count must be > 0: " + offset + "/" + count);
             }
+#pragma warning disable CS0618 // Type or member is obsolete
             SortCollector collector = GetSortCollector(req.Sort, req.Query, offset, count, req.FetchStoredFields, req.TermVectorsToFetch, false, req.GroupBy, req.MaxPerGroup, req.CollectDocIdCache);
+#pragma warning restore CS0618 // Type or member is obsolete
 
             var facetCollectors = new Dictionary<string, IFacetAccessible>();
             Browse(req, collector, facetCollectors);

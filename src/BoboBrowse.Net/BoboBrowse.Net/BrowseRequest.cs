@@ -138,7 +138,9 @@ namespace BoboBrowse.Net
             FetchStoredFields = false;
             GroupBy = null;
             MaxPerGroup = 0;
+#pragma warning disable CS0618 // Type or member is obsolete
             CollectDocIdCache = false;
+#pragma warning restore CS0618 // Type or member is obsolete
         }
 
         /// <summary>
