@@ -44,9 +44,6 @@
     <Reference Include="C5, Version=2.2.4822.42600, Culture=neutral, PublicKeyToken=282361b99ded7e8e, processorArchitecture=MSIL">
       <HintPath>..\packages\C5.2.2.4822.42600\lib\portable-win+net40+sl40+wp+Xbox40\C5.dll</HintPath>
     </Reference>
-    <Reference Include="CMS.Ecommerce.Web.UI">
-      <HintPath>..\..\..\..\..\Plasticentre\Plasticentre\Lib\CMS.Ecommerce.Web.UI.dll</HintPath>
-    </Reference>
     <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <HintPath>..\packages\Common.Logging.3.0.0\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
